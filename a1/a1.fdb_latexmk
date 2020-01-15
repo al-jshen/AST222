@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1579064222 "a1.tex" "a1.pdf" "a1" 1579064222
+["pdflatex"] 1579064361 "a1.tex" "a1.pdf" "a1" 1579064361
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -228,11 +228,11 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "a1.aux" 1579063016 757 57807d2400c150987558705201f0410e "pdflatex"
-  "a1.out" 1579063016 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "a1.tex" 1579064222 3917 6d309490cea4ee3dcf12c1ab14668c53 ""
+  "a1.aux" 1579064224 757 57807d2400c150987558705201f0410e "pdflatex"
+  "a1.out" 1579064223 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "a1.tex" 1579064359 4063 9aa75d42803d43d7f6fdf0a332e13636 ""
   (generated)
   "a1.pdf"
-  "a1.log"
-  "a1.aux"
   "a1.out"
+  "a1.aux"
+  "a1.log"
