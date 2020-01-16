@@ -82,18 +82,31 @@
     \item We can rearrange the distance modulus equation, accounting for reddening, to isolate absolute magnitude:
         \begin{alignat*}{2}
             &&d &= 10^{(m - M + 5 - A) / 5} \\
-            \implies&&\log(d) &= (m-M+5-A)/5 \\
-            \implies&&M &= m+5-A - 5\log(d)
+            &&&= 10^{(m-M+5-kd)/5} \\
+            \implies&&\log(d) &= (m-M+5-kd)/5 \\
+            \implies&&M &= m+5-kd - 5\log(d)
         \end{align*}
-        The difference is just the $-A$ term, so we can avoid any calculations by simply observing that we can subtract {\huge units? is mag/pc the right one? NO. SHOULD BE MAG/KPC!!! how to properly estimate spectral type?} the reddening value from our previous result.
+        {\huge do we assume delorean to be MS star?}
         \begin{itemize}
-            \item For a reddening value of 1 mag/pc, $M=7.6$. This would probably be type K.
-            \item For a reddening value of 2 mag/pc, $M=6.6$. This would probably be type K.
-            \item For a reddening value of 3 mag/pc, $M=5.6$. This would probably be type G. 
+            \item For a reddening value of $k=10^{-3}~{\rm mag/pc}$, the absolute magnitude is 
+                \begin{align*}
+                    M = 21 + 5 - 10^{-3}~{\rm mag/pc}\times 3000~{\rm pc}- 5\log(3000) = 21 + 5 - 3 - 17.4 = 5.6.
+                \end{align*}
+                This would probably be a type G star. 
+            \item For a reddening value of $k=2\times 10^{-3}~{\rm mag/pc}$, the absolute magnitude is 
+                \begin{align*}
+                    M = 21 + 5 - 2\times 10^{-3}~{\rm mag/pc}\times 3000~{\rm pc}- 5\log(3000) = 21 + 5 - 6 - 17.4 = 2.6.
+                \end{align*}
+                This would probably be a type A star. 
+            \item For a reddening value of $k=3\times 10^{-3}~{\rm mag/pc}$, the absolute magnitude is 
+                    \begin{align*}
+                        M = 21 + 5 - 3\times 10^{-3}~{\rm mag/pc}\times 3000~{\rm pc}- 5\log(3000) = 21 + 5 - 9 - 17.4 = -0.4.
+                \end{align*}
+                This would probably be a type B star. 
         \end{itemize}
         Reddening does make a difference in the estimation of Delorean's stellar type. 
 
-    \item 
+    \item {\huge sun -3kpc-> delorean -5kpc-> center}
 \end{enumerate}
 
 
