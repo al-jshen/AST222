@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  15 JAN 2020 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  19 JAN 2020 18:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1168,23 +1168,47 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 91.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 90.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 90.
  [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Overfull \hbox (2.3082pt too wide) in paragraph at lines 115--117
+! Extra }, or forgotten $.
+l.112 ...= 0.04~{\rm M_\odot\,pc^{-3}}$, $R_0 = 8}
+                                                  ~{\rm kpc}$, $h_R = 2.5~{\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Overfull \hbox (2.3082pt too wide) in paragraph at lines 139--141
 \OT1/ppl/m/n/20.74 you want to point the tele-scope away from the galac-
  []
 
 
-Overfull \hbox (13.11287pt too wide) in paragraph at lines 115--117
+Overfull \hbox (13.11287pt too wide) in paragraph at lines 139--141
 \OT1/ppl/m/n/20.74 tic cen-ter since you cant see through it, and the bright-
  []
+
+[2]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.173     \item I
+                 f we start with $\rho \propto 1/r^{3.5}$ and try to find th...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -1193,20 +1217,85 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 \end{enumerate}
-                     
+l.173     \item I
+                 f we start with $\rho \propto 1/r^{3.5}$ and try to find th...
+
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[2]
 
-! LaTeX Error: \begin{alignat*} on input line 144 ended by \end{align*}.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.148         \end{align*}
+l.173     \item I
+                 f we start with $\rho \propto 1/r^{3.5}$ and try to find th...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178     \item W
+                 e repeat the same process above, but with $\rho \propto 1/r...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178     \item W
+                 e repeat the same process above, but with $\rho \propto 1/r...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178     \item W
+                 e repeat the same process above, but with $\rho \propto 1/r...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[3]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{alignat*} on input line 202 ended by \end{align*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206         \end{align*}
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1219,7 +1308,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 \end{enumerate}
+l.213 \end{enumerate}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1231,31 +1320,31 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.162 \end{enumerate}
+l.219 \end{enumerate}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 AED: lastpage setting LastPage
-[3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
  (./a1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `a1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  ) 
 Here is how much of TeX's memory you used:
- 33993 strings out of 492616
- 768618 string characters out of 6129482
- 1047764 words of memory out of 5000000
+ 34001 strings out of 492616
+ 768672 string characters out of 6129482
+ 1048764 words of memory out of 5000000
  37305 multiletter control sequences out of 15000+600000
- 31161 words of font info for 88 fonts, out of 8000000 for 9000
+ 32446 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,19n,127p,907b,620s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,19n,127p,907b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
@@ -1266,10 +1355,10 @@ exmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/tex
 mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist
 /fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on a1.pdf (3 pages, 83906 bytes).
+Output written on a1.pdf (4 pages, 91569 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
+ 89 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
