@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1580018619 "a1.tex" "a1.pdf" "a1" 1580018619
-  "/dev/null" 1580018606 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1580078517 "a1.tex" "a1.pdf" "a1" 1580078516
+  "/dev/null" 1580078512 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -241,11 +241,13 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "a1.aux" 1580018574 757 e7ee946ccff141ca155c99603cf952cb "pdflatex"
-  "a1.out" 1580018574 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "a1.tex" 1580018618 25834 9ab6f063a1c8b40d1d12622b3ba105b1 ""
+  "a1.aux" 1580077217 2343 8ddc0ea4ff48ef46b4fb869e06e1f40d "pdflatex"
+  "a1.out" 1580077217 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "a1.tex" 1580078516 29485 fec2b4446e64ed811722c1068b8f0697 ""
+  "projection.png" 1580076475 151430 c5886623ea23e8e91560f8c4a1d73116 ""
+  "trig.png" 1580076684 186456 708fe5980b55e6b09a827a38f8d38520 ""
   (generated)
-  "a1.log"
-  "a1.aux"
-  "a1.out"
   "a1.pdf"
+  "a1.aux"
+  "a1.log"
+  "a1.out"
