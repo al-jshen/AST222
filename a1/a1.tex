@@ -229,7 +229,6 @@
      %     \overline{\rho} = \frac{M}{V} = \frac{M}{\frac{4}{3}\pi R^3} = \frac{2.67\times 10^{11}~{\rm M_\odot}}{\frac{4}{3}\pi\times (11~{\rm kpc})^3} = 4.79\times 10^{7}~{\rm M_\odot\,kpc^{-3}}.
      % \end{align*} 
 
-
     Again using the Sun as a reference, the dynamical time of Delorean in this new position is
     \begin{align*}
         t_D = 230~{\rm Myr}\,\frac{\sqrt{1.86\times 10^{6}~{\rm M_\odot\,kpc^{-3}}}}{\sqrt{7.53\times 10^{5}~{\rm M_\odot\,kpc^{-3}}}} \simeq 361~{\rm Myr}.
@@ -374,8 +373,103 @@ The acceleration of the star is given by the equation
 
 % problem 7
 \section*{Problem 7} 
-pg 910 = pg 1056
 \begin{enumerate}[label=(\alph*)]
+    \item We start with the equations 
+        \begin{align}
+            v_r &= (\Omega - \Omega_0)R_0\sin(l) \\
+            v_t &= (\Omega - \Omega_0)R_0\cos(l) - \Omega d.
+        \end{align}
+        For stars near the Sun, we perform a Taylor series approximation (first-order) of $\Omegea(R)$ about $\Omega_0(R_0)$:
+        \begin{alignat}{2}
+            &&\Omega(R) &\simeq \Omega_0(R_0) + \frac{d\Omega}{dR}\Big|_{R_0}(R-R_0) \nonumber \\
+            \implies&&\Omega - \Omega_0 &\simeq \frac{d\Omega}{dR}\Big|_{R_0}(R-R_0).
+        \end{alignat}
+        Substituting Eq. 3 into Eq. 1, we obtain a new expression for $v_r$:
+        \begin{align}
+            v_r \simeq \frac{d\Omega}{dR}\Big|_{R_0}(R-R_0)R_0\sin(l).
+        \end{align}
+        We also know that 
+        \begin{align}
+            \Omega = \frac{\Theta}{R},
+        \end{align}
+        so the derivative $d\Omega/dR$ becomes
+        \begin{align}
+            \frac{d\Omega}{dR} = \frac{d(\frac{\Theta}{R})}{R} = \frac{\frac{d\Theta}{dR}R - \Theta}{R^2} = \frac{\frac{d\Theta}{dR}}{R} - \frac{\Theta}{R^2}.
+        \end{align}
+        Evaluating this at $R_0$ and multiplying by $R_0$ gives 
+        \begin{align}
+            R_0\frac{d\Omega}{dR}\Big|_{R_0} = R_0(\frac{\frac{d\Theta}{dR}\Big|_{R_0}}{R_0} - \frac{\Theta_0}{R_0^2}) = \left[\frac{d\Theta}{dR}\Big|_{R_0} - \frac{\Theta_0}{R_0}\right].
+        \end{align}
+        We can substitute this back in to Eq. 4:
+        \begin{align}
+            v_r \simeq \frac{d\Omega}{dR}\Big|_{R_0}(R-R_0)R_0\sin(l) = \left[\frac{d\Theta}{dR}\Big|_{R_0} - \frac{\Theta_0}{R_0}\right](R-R_0)\sin(l).
+        \end{align}
+        Following nearly identical steps and performing substitutions of Eq. 3 and Eq. 7 into Eq. 2, we find that 
+        \begin{align}
+            v_t &= (\Omega - \Omega_0)R_0\cos(l) - \Omega d \\
+            &= \frac{d\Omega}{dR}\Big|_{R_0}(R-R_0)R_0\cos(l) - \Omega d \\
+            &= \left[\frac{d\Theta}{dR}\Big|_{R_0} - \frac{\Theta_0}{R_0}\right](R-R_0)\cos(l) - \Omega_0 d.
+        \end{align}
+    
+    \item For the radial velocity, we start with Eq. 8:
+        \begin{align}
+            v_r = \left[\frac{d\Theta}{dR}\Big|_{R_0} - \frac{\Theta_0}{R_0}\right](R-R_0)\sin(l)
+        \end{align}
+        We multiply by $1/2$ and by $2$ (which doesn't change anything), and factor out $-1$ from the $(R-R_0)$ term:
+        \begin{align}
+            v_r = 2\times -\frac{1}{2}\left[\frac{d\Theta}{dR}\Big|_{R_0} - \frac{\Theta_0}{R_0}\right]\times(R_0-R)\sin(l).
+        \end{align}
+        Note that the second term is just $A$ (C&O Eq. 24.39):
+        \begin{align}
+            v_r = 2A(R_0-R)\sin(l).
+        \end{align}
+        Note also that for a small angle $\beta$, $\cos\beta \simeq 1$, so we have the approximation 
+        \begin{align}
+            d\cos(l) = R_0 - R\cos\beta \simeq R_0 - R.
+        \end{align}
+        Substituting this into Eq. 14, we have 
+        \begin{align}
+            v_r = 2A\sin(l)d\cos(l).
+        \end{align}
+        Reorganizing and using the identity $2\sin(l)\cos(l) = \sin(2l)$, we see that 
+        \begin{align*}
+            v_r = Ad\times 2\sin(l)\cos(l) = Ad\sin(2l)
+        \end{align*}
+        as expected.
+
+        For the tangential velocity, we start with Eq. 11. As before, we multiply by $1/2$ and by $2$, and factor out $-1$ from the $R-R_0$ term:
+        \begin{align}
+            v_t &= 2\times -\frac{1}{2}\left[\frac{d\Theta}{dR}\Big|_{R_0} - \frac{\Theta_0}{R_0}\right]\times(R_0-R)\cos(l) - \Omega_0 d \\
+            &= 2A\cos(l) - \Omega_0 d.
+        \end{align}
+        Making the same small angle approximation as before, we get 
+        \begin{align}
+            v_t = 2A\cos(l)d\cos(l) - \Omega_0 d = Ad\times 2\cos^2(l) - \Omega_0 d.
+        \end{align}
+        Using the identity $\cos(2l) = 2\cos^2(l) - 1$, Eq. 19 becomes
+        \begin{align}
+            v_t &= Ad(\cos(2l) + 1) - \Omega_0 d \\
+            &= Ad\cos(2l) + Ad - \Omega d \\
+            &= Ad\cos(2l) + (A - \Omega)d.
+        \end{align}
+        Now, note the following:
+        \begin{align}
+            A - B &= -\frac{1}{2}\left[\cancel{\frac{d\Theta}{dR}\Big|_{R_0}} - \frac{\Theta_0}{R_0}\right] + \frac{1}{2}\left[\cancel{\frac{d\Theta}{dR}\Big|_{R_0}} + \frac{\Theta_0}{R_0}\right] \\
+            &= \frac{1}{2}\frac{\Theta_0}{R_0} + \frac{1}{2}\frac{\Theta_0}{R_0} \\ 
+            &= \frac{\Theta_0}{R_0} = \Omega_0.
+        \end{align}
+        In particular, 
+        \begin{alignat}{2}
+            &&A - B &= \Omega_0 \\
+            \implies&&A - \Omega_0 &= B.
+        \end{alignat}
+        Substituting this result into Eq. 22, we find that 
+        \begin{align}
+            v_t &= Ad\cos(2l) + (A - \Omega)d \\
+            &= Ad\cos(2l) + Bd
+        \end{align}
+        as expected.
+
 \end{enumerate}
 
 
