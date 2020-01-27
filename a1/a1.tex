@@ -362,6 +362,48 @@ The acceleration of the star is given by the equation
             \implies&&v^2 &= \frac{2GM\cancel{m}}{r_0\cancel{m}} \\
             \implies&&v^2 &= \frac{2GM}{r_0}.
         \end{alignat*}
+
+    \item Force is given by 
+        \begin{align*}
+            \frac{GM(r)m}{r^2},
+        \end{align*}
+        where $M(r)$ is the mass enclosed, expressed as 
+        \begin{align*}
+            M(r) &= V(r)\rho(r) \\
+            &= \frac{4}{3}\pi r^3 \rho(r) \\
+            &= \frac{4}{3}\pi r^3 \frac{c}{r^2} \\
+            &= \frac{4}{3}\pi cr
+        \end{align*}
+        for some constant $c$. Work required is given by integral:
+        \begin{align*}
+            \int_r^R \frac{GM(r)m}{r^2}dr &= GM\frac{4}{3}\pi c\int_r^R \frac{1}{r}dr \\
+            &= GM\frac{4}{3}\pi c \ln(\frac{R}{r}).
+        \end{align*}
+        Set this equal to kinetic energy:
+        \begin{alignat*}{2}
+            &&Gm\frac{4}{3}\pi c\ln{\frac{R}{r}} &= \frac{1}{2}mv^2 \\
+            \implies&&v^2 &= \frac{8}{3}\pi Gc\ln{\frac{R}{r}}.
+        \end{alignat*}
+        Not sure what to do from here. 
+
+    \item Virial theorem:
+        \begin{align*}
+            0 &= 2K + U \\
+            &= 2\frac{mv^2}{2} - \frac{GMm}{r} \\
+            &= mv^2 - \frac{GMm}{r}
+        \end{align*}
+        where $K$ is the kinetic energy, $U$ is the potential energy, $m$ is the mass of the star, $M$ is the mass of the galaxy, $r$ is the distance from the star to the center of the galaxy. Rearrange for $M$:
+        \begin{alignat*}{2}
+            &&\frac{GM\cancel{m}}{r} &= \cancel{m}v^2 \\
+            \implies&&M &= \frac{v^2 r}{G}
+        \end{alignat*}
+        Use values $v=4.4\times 10^{5}~{\rm m\,s^{-1}}$ (need to adjust for solar rotational velocity???), $r = 8~{\rm kpc} = 2.467\times 10^{20}~{\rm m}$, $G = 6.67\times 10^{-11}~{\rm m^3\,kg^{-1}\,s^{-2}}$:
+        \begin{align*}
+            M = \frac{(4.4\times 10^{5}~{\rm m\,s^{-1}})^2(2.467\times 10^{20}~{\rm m})}{6.67\times 10^{-11}~{\rm m^3\,kg^{-1}\,s^{-2}}} = 7.16\times 10^{41}~{\rm kg}.
+        \end{align*}
+
+
+
 \end{enumerate}
 
 % problem 6
@@ -376,7 +418,7 @@ The position of Pal 5\footnote{Table 2 from T. K. Fritz and N. Kallivayalil. 201
         \end{align*}
 
 \begin{enumerate}[label=(\alph*)]
-            \item The tangential velocity is given by 
+        \item The tangential velocity is given by 
         \begin{align*}
             v_t = \mu d.
         \end{align*}
@@ -398,26 +440,44 @@ The position of Pal 5\footnote{Table 2 from T. K. Fritz and N. Kallivayalil. 201
         \begin{align*}
             v = \sqrt{v_r^2 + v_t^2} = \sqrt{(-58.6~{\rm km\,s^{-1}})^2 + (418.9~{\rm km\,s^{-1}})^2} = 423~{\rm km\,s^{-1}}.
         \end{align*}
-    \item We can convert the position of Pal 5 from equatorial coordinates to galactic coordinates following the same procedure as the one in Question 3. We find that 
+    \item I have no idea what I'm doing for this question. We can convert the position of Pal 5 from equatorial coordinates to galactic coordinates following the same procedure as the one in Question 3. We find that 
         \begin{align*}
             l &= 0.85^\circ \\
             b &= 45.86^\circ.
         \end{align*}
-    \end{enumerate}
     This means that Pal 5 is (very nearly) directly on the other side of the galactic center and above the galactic plane.
     \begin{figure}[!htb]
         \centering
         \includegraphics[width=0.4\linewidth]{trig.png}
         \caption{\label{fig:trig}Position of Pal 5 from a side-on view (the line connecting the center of the galaxy and the Sun is along the galactic disk). Units of angles are in degrees. Basic trigonometry was used to determine all the angles and lengths.}
     \end{figure}
-    We assume that Knowing that the angle between the directional vectors from Pal 5 to the Sun and from Pal 5 to the center of the galaxy, and the fact that Pal 5, the center of the galaxy, and the Sun are all (very nearly) aligned, we can project the radial velocity vector (from Pal 5 to the Sun) in the direction of the vector from Pal 5 to the center of the galaxy. This gives the radial velocity from Pal 5 to the center of the galaxy:
+    Knowing that the angle between the directional vectors from Pal 5 to the Sun and from Pal 5 to the center of the galaxy, and the fact that Pal 5, the center of the galaxy, and the Sun are all (very nearly) aligned, we can project the radial velocity vector (from Pal 5 to the Sun) in the direction of the vector from Pal 5 to the center of the galaxy. This gives the radial velocity from Pal 5 to the center of the galaxy:
         \begin{figure}[!htb]
             \centering
             \includegraphics[width=0.5\linewidth]{projection.png}
             \caption{\label{fig:proj}Radial velocity of Pal 5 towards the center of the galaxy given by a projection of the vector representing radial velocity of Pal 5 towards the Sun: $v_{s2} = v_{s1} \cos(\theta) = -58.6~{\rm km\,s^{-1}}\cos{17.9^\circ} = -55.8~{\rm km\,s^{-1}}$.}
         \end{figure}
-    
-% problem 7
+        Since the Sun is moving towards the center of the galaxy at $10~{\rm km\,s^{-1}}$, we need to make an adjustment of $10~{\rm km\,s^{-1}}\cos(45) = 7~{\rm km\,s^{-1}}$. So the radial velocity of Pal 5 towards the center of the galaxy is $-55.8~{\rm km\,s^{-1}} + 7~{\rm km\,s^{-1}} = -48.8~{\rm km\,s^{-1}}$.
+
+        We can scale the tangential velocity observed from the Sun:
+        \begin{align*}
+            v_{t2} = v_{t1}\frac{d1}{d2} = 418.9~{\rm km\,s^{-1}}\frac{23.2~{\rm kpc}}{18.43~{\rm kpc}} = 528~{\rm km\,s^{-1}}.
+        \end{align*}
+        Then the total velocity is 
+        \begin{align*}
+            v = \sqrt{v_r^2 + v_t^2} = \sqrt{(-48.8~{\rm km\,s^{-1}})^2 + (528~{\rm km\,s^{-1}})^2} = 530~{\rm km\,s^{-1}}.
+        \end{align*}
+
+    \item Use Kepler's Third Law. Period given by 
+        \begin{align*}
+            P = \frac{2\pi R}{\Theta},
+        \end{align*}
+        where $R$ is distance from center, $\Theta$ is rotational velocity. Then assume mass of Pal 5 is negligible relative to the mass of the Milky Way. So 
+        \begin{align*}
+            M = \frac{4\pi^2R^3}{GP^2}.
+        \end{align*}
+    \end{enumerate}
+
 \section*{Problem 7} 
 \begin{enumerate}[label=(\alph*)]
     \item We start with the equations 
