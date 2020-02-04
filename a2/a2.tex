@@ -1,0 +1,166 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{cancel}
+\usepackage{physics}
+\usepackage{caption,cleveref,colortbl,csquotes,datatool,helvet,mathpazo,multirow,listings,pgfplots,xcolor}
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\setlength{\footnotesep}{1.2\baselineskip}
+
+
+% edit these
+\newcommand\course{AST222H}
+\newcommand\Title{Problem Set 2}
+\newcommand\Name{Jeff Shen} 
+\newcommand\Id{1004911526} 
+\newcommand\Date{7 Feb 2020}
+
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\Name}
+\lhead{\Name\\\Id}
+\chead{\LARGE \Title}
+\rhead{\course \\ \Date}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\pgfplotsset{compat=1.16}
+\headsep 1.2em
+
+\begin{document}
+
+% problem 1
+\section*{Problem 1}
+        The Oort constants $A$ and $B$ are 
+        \begin{align*}
+            A &= -\frac{1}{2}\left[\frac{d\Theta}{dR}\Big|_{R_0} - \frac{\Theta_0}{R_0}\right] \\
+            B &= -\frac{1}{2}\left[\frac{d\Theta}{dR}\Big|_{R_0} + \frac{\Theta_0}{R_0}\right] \\
+        \end{align*}
+        Substituting in $\Theta(R) = \Theta_0 (R/R_0)^{-0.5}$, $A$ becomes 
+        \begin{align*}
+            A &= -\frac{1}{2}\left[\frac{d}{dR}\left(\Theta_0 - \sqrt{\frac{R_0}{R}}\right)\Big|_{R_0} - \frac{\Theta_0}{R_0}\right] \\ 
+            &= -\frac{1}{2}\left[\Theta_0 \sqrt{R_0}\frac{d}{dR}\left(R^{-0.5}\right)\Big|_{R_0} - \frac{\Theta_0}{R_0}\right] \\ 
+            &= -\frac{1}{2}\left[\Theta_0 \sqrt{R_0}\left(-\frac{1}{2}R^{-1.5}\right)\Big|_{R_0} - \frac{\Theta_0}{R_0}\right] \\
+            &= -\frac{1}{2}\left[\Theta_0 \sqrt{R_0}\left(-\frac{1}{2}R_0^{-1.5}\right) - \frac{\Theta_0}{R_0}\right] \\
+            &= -\frac{1}{2}\left[-\frac{1}{2}\frac{\Theta_0}{R_0} - \frac{\Theta_0}{R_0}\right] \\ 
+            &= -\frac{1}{2}\left[-\frac{3}{2}\frac{\Theta_0}{R_0}\right] \\
+            &= \frac{3}{4}\frac{\Theta_0}{R_0}.
+        \end{align*}
+        Following a similar procedure (with some steps omitted below) for $B$, we get 
+        \begin{align*}
+            B &= -\frac{1}{2}\left[\frac{d}{dR}\left(\Theta_0 - \sqrt{\frac{R_0}{R}}\right)\Big|_{R_0} - \frac{\Theta_0}{R_0}\right] \\ 
+            &= -\frac{1}{2}\left[\Theta_0 \sqrt{R_0}\left(-\frac{1}{2}R_0^{-1.5}\right) + \frac{\Theta_0}{R_0}\right] \\
+            &= -\frac{1}{2}\left[-\frac{1}{2}\frac{\Theta_0}{R_0} + \frac{\Theta_0}{R_0}\right] \\ 
+            &= -\frac{1}{2}\left[\frac{1}{2}\frac{\Theta_0}{R_0}\right] \\
+            &= -\frac{1}{4}\frac{\Theta_0}{R_0}.
+        \end{align*}
+
+        Taking $\Theta_0 = 220~{\rm km\,s^{-1}}$ and $R_0 = 8~{\rm kpc}$, we get the values 
+        \begin{align*}
+            A = 20.625~{\rm km\,s^{-1}\,kpc^{-1}} \qquad \text{and} \qquad B = -6.875~{\rm km\,s^{-1}\,kpc^{-1}}.
+        \end{align*}
+        Observed values are 
+        \begin{align*}
+            A = 15.3~{\rm km\,s^{-1}\,kpc^{-1}} \qquad \text{and} \qquad B = -11.9~{\rm km\,s^{-1}\,kpc^{-1}}.
+        \end{align*}
+        {\huge something about how the values compare?}
+            
+
+
+% problem 2
+\section*{Problem 2}
+\begin{enumerate}[label=(\alph*)]
+    \item The vertical position of the Sun is given by the equation 
+        \begin{align}
+            z(t) = A_Z\sin{(vt + \varphi)},
+        \end{align}
+        and the vertical velocity is given by its derivative with respect to time:
+        \begin{alignat}{2}
+            &&z'(t) &= A_Z\cos{(vt + \varphi)}v \nonumber\\
+            \implies&&\frac{z'(t)}{v} &= A_Z\cos{(vt + \varphi)}.
+        \end{alignat}
+        Adding the squares of Eq. 1 and Eq. 2 give the following:
+        \begin{align*}
+            z(t)^2 + \left(\frac{z'(t)}{v}\right)^2 = A_Z^2\sin^2(x) + A_Z^2\cos^2(x) = A_Z^2(\sin^2(x) + \cos^2(x)) = A_Z^2.
+        \end{align*}
+        Using this to solve for $A_Z$, we get 
+        \begin{align*}
+            A_Z = \sqrt{z(t)^2 + \left(\frac{z'(t)}{v}\right)^2}.
+        \end{align*}
+        We know that at some $t=t_0$, we have $z(t_0) = 20~{\rm pc} = 6.171\times 10^{14}~{\rm km}$ and $z'(t_0) = 7.25~{\rm km\,s^{-1}}$. We also know that the vertical oscillation frequency $v$ is given by $v = \frac{2\pi}{p}$, where the period $p$ is equal to $85~{\rm Myr} = 2.68\times 10^{15}~{\rm s}$. Then, at $t=t_0$, $A_Z$ is given by 
+        \begin{align*}
+            A_Z = \sqrt{(6.171\times 10^{14}~{\rm km})^2 + \left(\frac{7.25~{\rm km\,s^{-1}}}{\frac{2\pi}{2.68\times 10^{15}~{\rm s}}}\right)^2} = 3.15\times 10^{15}~{\rm km} \simeq 102.2~{\rm pc}.
+        \end{align*}
+    \item The Sun's position oscillates radially with some amplitude $A_R$, given by 
+        \begin{align*}
+            A_R = \frac{9.16~{\rm kpc} - 7.92~{\rm kpc}}{2} = 0.62~{\rm kpc},
+        \end{align*}
+        about some average radial position $R_A$, given by 
+        \begin{align*}
+            R_A = \frac{9.16~{\rm kpc} + 7.92~{\rm kpc}}{2} = 8.54~{\rm kpc}.
+        \end{align*}
+        The radial position is given by 
+        \begin{align*}
+            r(t) = A_R\sin{(\kappa t)},
+        \end{align*}
+        and the velocity by its time derivative 
+        \begin{align*}
+            r'(t) = A_R\cos{(\kappa t)}\kappa.
+        \end{align*}
+        We know that at the current time $t=t_0$, the following is true:
+        \begin{align*}
+            r(t_0) = R_0 = A_R\sin{(\kappa t_0)}.
+        \end{align*}
+        Rearranging to solve for $t_0$, we find that 
+        \begin{alignat*}{2}
+            &&R_0 &= A_R\sin{(\kappa t_0)} \\
+            \implies&&\frac{R_0}{A_R} &= \sin{(\kappa t_0)} \\
+            \implies&&\kappa t_0 &= \arcsin{\left(\frac{R_0}{A_R}\right)} \\
+            \implies&&t_0 &= \frac{\arcsin{\left(\frac{R_0}{A_R}\right)}}{\kappa}.
+        \end{alignat*}
+        In this case, we take $R_0 = 8.0~{\rm kpc}$ relative to the midpoint of the radial oscillation, $R_A = 8.54~{\rm kpc}$. Thus, in the equation above, we use $R_0 = 8.0~{\rm kpc} - 8.54~{\rm kpc} = -0.54~{\rm kpc}$. Using this value, and $\kappa = 36~{\rm km\,s^{-1}\,kpc^{-1}}$, we find that the current time $t_0$ is 
+        \begin{align*}
+            t_0 &= \frac{\arcsin{\left(\frac{R_0}{A_R}\right)}}{\kappa} \\
+            &= \frac{\arcsin{\left(\frac{-0.54~{\rm kpc}}{0.62~{\rm kpc}}\right)}}{36~{\rm km\,s^{-1}\,kpc^{-1}}} \\
+            &= -0.0294~{\rm kpc\,s^{-1}\,km^{-1}} \times \frac{3.068\times 10^{16}~{\rm km}}{{\rm kpc}} \\
+            &= -9.01\times 10^{14}~{\rm s}.
+        \end{align*}
+        {\huge can we just use the cos property earlier so we dont get a negative time? take abs of the arcsin thing? otherwise put this as a footnote? combining this + the velocity equation would eliminate the intermediate negative time and the kappa would cancel out perfectly and avoid rounding errors.}
+        We can ignore the fact that the time is negative because this is simply an intermediate value that will be put into $\cos$, which, as an even function, satisfies $\cos(x) = \cos(-x)$.
+        We can convert the units of the epicycle frequency $\kappa$ into seconds: $\kappa = 36~{\rm km\,s^{-1}\,kpc^{-1}} = 1.167\times 10^{-15}~{\rm s^{-1}}$. We can use this and the current time to calculate the current velocity in the radial direction:
+        \begin{align*}
+            r'(t_0) &= A_R\cos(\kappa t_0)\kappa \\
+            &= 0.62~{\rm kpc}\times \cos(1.167\times 10^{-15}~{\rm s^{-1}}\times -9.01\times 10^{14}~{\rm s})\times 36~{\rm km\,s^{-1}\,kpc^{-1}} \\
+            &= 11.1~{\rm km\,s^{-1}}.
+        \end{align*}
+
+\end{enumerate}
+
+
+% problem 3
+\section*{Problem 4}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+\end{enumerate}
+
+
+
+
+\end{document}
