@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1580796556 "a2.tex" "a2.pdf" "a2" 1580796557
-  "/dev/null" 1580796556 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1580796556 "a2.tex" "a2.pdf" "a2" 1581025349
+  "/dev/null" 1581025348 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -240,9 +240,9 @@
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
   "a2.aux" 1580796557 757 c8354d10a4707610207095b921558890 "pdflatex"
   "a2.out" 1580796557 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "a2.tex" 1580796555 7916 8053257b0ce05dad413d5dbd48a6045b ""
+  "a2.tex" 1580796850 7916 8053257b0ce05dad413d5dbd48a6045b ""
   (generated)
-  "a2.out"
-  "a2.aux"
-  "a2.pdf"
   "a2.log"
+  "a2.aux"
+  "a2.out"
+  "a2.pdf"
