@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1580796556 "a2.tex" "a2.pdf" "a2" 1581025349
-  "/dev/null" 1581025348 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1581032374 "a2.tex" "a2.pdf" "a2" 1581032375
+  "/dev/null" 1581032368 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -21,6 +21,7 @@
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm" 1136768653 1012 955c4ca523d7827d33db91a33412b048 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm" 1136768653 1316 b4037e9c09961a72f8476628774e1ec1 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
+  "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb" 1136849748 9356 a3851bc942e9b6995883193472ba1847 ""
@@ -223,6 +224,7 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/helvet.sty" 1156702453 1500 3c2647c8649928795ededd42a6e85f85 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/mathpazo.sty" 1156702453 8977 7001b1ab94674ce4a6004aef2826ec90 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omlzplm.fd" 1137110629 638 2349dd185efcefd0c3380a2601df0cee ""
+  "/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsppl.fd" 1137110629 576 be451a105739548c4929bd91be18fae6 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omszplm.fd" 1137110629 455 c09241d92b40b1b84eb2bb5776606aea ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omxzplm.fd" 1137110629 322 fb88cb3e5f25cf1596ba8826c4210e0e ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ppl.fd" 1137110629 961 06b773644d960aac68add40fcb596208 ""
@@ -238,9 +240,10 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "a2.aux" 1580796557 757 c8354d10a4707610207095b921558890 "pdflatex"
-  "a2.out" 1580796557 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "a2.tex" 1580796850 7916 8053257b0ce05dad413d5dbd48a6045b ""
+  "a2.aux" 1581032375 757 1ea3239fe273b83c9e7c52e43abdd96d "pdflatex"
+  "a2.out" 1581032375 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "a2.tex" 1581032372 13074 2d850449643c65cba47b09e5effb5a5f ""
+  "velocity_curves.png" 1581025658 38822 8808d3b885a0212f5a8eece580cf733b ""
   (generated)
   "a2.log"
   "a2.aux"

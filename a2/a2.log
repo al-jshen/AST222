@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  4 FEB 2020 01:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  6 FEB 2020 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1190,15 +1190,15 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
-* v-part:(T,H,B)=(56.9055pt, 610.02708pt, 128.0374pt)
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(36.135pt, 650.43pt, 108.405pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=472.03123pt
-* \textheight=610.02708pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-15.36449pt
+* \textwidth=469.75502pt
+* \textheight=650.43pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-36.135pt
 * \headheight=35.0pt
 * \headsep=13.14pt
 * \topskip=11.0pt
@@ -1314,43 +1314,68 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 ) [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ] [2]
-Overfull \hbox (29.01901pt too wide) in paragraph at lines 144--148
-\OT1/ppl/m/n/20.74 the in-ter-me-di-ate neg-a-tive time and the kappa would
+Overfull \hbox (9.53748pt too wide) in paragraph at lines 141--142
+[][] 
  []
 
-[3] 
+[3]
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 167.
+
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 167.
+
+Overfull \hbox (26.31128pt too wide) detected at line 182
+[]
+ []
+
+[4] [5]
+<velocity_curves.png, id=48, 867.24pt x 578.16pt>
+File: velocity_curves.png Graphic file (type png)
+<use velocity_curves.png>
+Package pdftex.def Info: velocity_curves.png  used on input line 243.
+(pdftex.def)             Requested size: 657.65416pt x 438.45338pt.
+
+Overfull \hbox (104.62138pt too wide) in paragraph at lines 242--244
+[]  [] 
+ []
+
+
 AED: lastpage setting LastPage
-[4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
+[6 <./velocity_curves.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
  (./a2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
 Package rerunfilecheck Info: File `a2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
  ) 
 Here is how much of TeX's memory you used:
- 44076 strings out of 492616
- 962314 string characters out of 6129482
- 1211190 words of memory out of 5000000
- 47374 multiletter control sequences out of 15000+600000
- 552343 words of font info for 76 fonts, out of 8000000 for 9000
+ 44108 strings out of 492616
+ 962845 string characters out of 6129482
+ 1212184 words of memory out of 5000000
+ 47395 multiletter control sequences out of 15000+600000
+ 551498 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,13n,127p,907b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/20
-19/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2019/t
-exmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-di
-st/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/font
-s/type1/urw/palatino/uplri8a.pfb>
-Output written on a2.pdf (4 pages, 83215 bytes).
+xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/201
+9/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2019/te
+xmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dis
+t/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts
+/type1/urw/palatino/uplri8a.pfb>
+Output written on a2.pdf (6 pages, 134117 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

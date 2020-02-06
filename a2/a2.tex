@@ -1,6 +1,6 @@
 \documentclass[11pt,letterpaper]{article}
 \usepackage{fullpage}
-\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[top=0.5in, bottom=1.5in, left=1in, right=1in]{geometry}
 \usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
 \usepackage{lastpage}
 \usepackage{enumerate}
@@ -80,9 +80,7 @@
         \begin{align*}
             A = 15.3~{\rm km\,s^{-1}\,kpc^{-1}} \qquad \text{and} \qquad B = -11.9~{\rm km\,s^{-1}\,kpc^{-1}}.
         \end{align*}
-        {\huge something about how the values compare?}
-            
-
+        This shows that Keplerian rotation does not perfectly describe the rotation of the Milky Way near the Sun. 
 
 % problem 2
 \section*{Problem 2}
@@ -135,14 +133,21 @@
             \implies&&\kappa t_0 &= \arcsin{\left(\frac{R_0}{A_R}\right)} \\
             \implies&&t_0 &= \frac{\arcsin{\left(\frac{R_0}{A_R}\right)}}{\kappa}.
         \end{alignat*}
-        In this case, we take $R_0 = 8.0~{\rm kpc}$ relative to the midpoint of the radial oscillation, $R_A = 8.54~{\rm kpc}$. Thus, in the equation above, we use $R_0 = 8.0~{\rm kpc} - 8.54~{\rm kpc} = -0.54~{\rm kpc}$. Using this value, and $\kappa = 36~{\rm km\,s^{-1}\,kpc^{-1}}$, we find that the current time $t_0$ is 
+
+        \fbox{%
+            \parbox{\linewidth}{%
+                I didn't do it here, but it is probably better to skip the following step and to just compute $r'(t_0)$ from here. This ``avoids" the problem of having a negative time, and because the $\kappa$ term cancels out, some (annoying) conversions and rounding steps can be avoided. Doing this gives $r'(t_0) = 11.0~{\rm km\,s^{-1}}$.
+            }
+        }
+        
+        In this case, we take $R_0 = 8.0~{\rm kpc}$ relative to the midpoint of the radial oscillation, $R_A = 8.54~{\rm kpc}$. Thus, in the equation above, we use $R_0 = 8.0~{\rm kpc} - 8.54~{\rm kpc} = -0.54~{\rm kpc}$. Using this value, and $\kappa = 36~{\rm km\,s^{-1}\,kpc^{-1}}$, we find that the current time $t_0$ is
         \begin{align*}
             t_0 &= \frac{\arcsin{\left(\frac{R_0}{A_R}\right)}}{\kappa} \\
             &= \frac{\arcsin{\left(\frac{-0.54~{\rm kpc}}{0.62~{\rm kpc}}\right)}}{36~{\rm km\,s^{-1}\,kpc^{-1}}} \\
             &= -0.0294~{\rm kpc\,s^{-1}\,km^{-1}} \times \frac{3.068\times 10^{16}~{\rm km}}{{\rm kpc}} \\
             &= -9.01\times 10^{14}~{\rm s}.
         \end{align*}
-        {\huge can we just use the cos property earlier so we dont get a negative time? take abs of the arcsin thing? otherwise put this as a footnote? combining this + the velocity equation would eliminate the intermediate negative time and the kappa would cancel out perfectly and avoid rounding errors.}
+
         We can ignore the fact that the time is negative because this is simply an intermediate value that will be put into $\cos$, which, as an even function, satisfies $\cos(x) = \cos(-x)$.
         We can convert the units of the epicycle frequency $\kappa$ into seconds: $\kappa = 36~{\rm km\,s^{-1}\,kpc^{-1}} = 1.167\times 10^{-15}~{\rm s^{-1}}$. We can use this and the current time to calculate the current velocity in the radial direction:
         \begin{align*}
@@ -154,11 +159,92 @@
 \end{enumerate}
 
 
+\newpage
 % problem 3
 \section*{Problem 4}
+Some useful information:
+\begin{itemize}
+    \item $G = 6.67\times 10^{-11}~{\rm m^3\,kg^{-1}\,s^{-2}}$
+    \item $1~{\rm pc} = 3.086\times 10^{16}~{\rm m}$
+    \item $1~{\rm M_\odot} = 1.989\times 10^{30}~{\rm kg}$
+\end{itemize}
+
 \begin{enumerate}[label=(\alph*)]
-    \item 
+    \item We equate gravitational acceleration with centripetal acceleration and solve for circular velocity: 
+        \begin{alignat*}{2}
+            &&\frac{GM_{BH}m}{R^2} &= \frac{mv_c^2}{R} \\
+            \implies&&v_c^2 &= \frac{GM_{BH}}{R} \\
+            \implies&&v_c &= \sqrt{\frac{GM_{BH}}{R}},
+        \end{alignat*}
+        where $M_{BH} = 4\times 10^{6}~{\rm M_\odot}$ is the mass of the black hole in solar masses, and $R$ is the distance from the black hole in parsecs. We can convert these to SI units, which will yield a velocity in meters per second. Then, we can divide the velocity by $1000$ to get a velocity in kilometers per second:
+        \begin{align*}
+            v_c(R)~{\rm [km\,s^{-1}]} &= \sqrt{\frac{G~{\rm [m^3\,kg^{-1}\,s^{-2}]}\times M_{BH}~{\rm [M_\odot]}\times 1.989\times 10^{30}~{\rm [kg\,M_\odot^{-1}]}}{R~{\rm [pc]}\times 3.086\times 10^{16}~{\rm [m\,pc^{-1}]}}} \times \frac{1~{\rm [km]}}{1000~{\rm [m]}} \simeq \frac{131}{\sqrt{R~{\rm [pc]}}}
+        \end{align*}
+
+    \item The density at some radius is given by $\rho(r) = \rho_0(\frac{r}{1~{\rm pc}})^{-1.9}$. We want to find $\rho_0$. The mass enclosed in a sphere with a radius of $R~{\rm pc}$ is 
+        \begin{align*}
+            M(<R~{\rm pc}) &= \int_0^{2\pi}\int_0^{\pi}\int_0^{r}\rho_0 (\frac{r}{1~{\rm pc}})^{-1.9}\,r^2 \sin{\theta}\,dr\,d\theta\,d\phi \\
+            &= 4\pi\rho_0 \int_0^R r^{0.1}\,dr \\
+            &= 4\pi\rho_0 \left(\frac{r^{1.1}}{1.1}\right)\big|_0^R \\
+            &= \frac{4\pi\rho_0}{1.1}R^{1.1}.
+        \end{align*}
+        The mass enclosed has units of $M_\odot$ since $\rho_0$ has units of $M_\odot\,pc^{-3}$, and the volume integral gives units of $pc^{3}$. 
+
+        At $R=1$, we know that the mass enclosed is same as the mass of the black hole, $4\times 10^{6}~{\rm M_\odot}$. We can use this information to solve for $\rho_0$:
+        \begin{alignat*}{2}
+            &&M(<1~{\rm pc}) &= \frac{4\pi\rho_0}{1.1}(1)^{1.1} = \frac{4\pi\rho_0}{1.1} = 4\times 10^{6}~{\rm M_\odot} \\
+            \implies&&\rho_0 &= 4\times 10^{6}\times~{\rm M_\odot} \times \frac{1.1}{4\pi}~{\rm pc^{-3}} \simeq 3.5\times 10^5~{\rm M_\odot\,pc^{-3}}.
+        \end{alignat*}
+
+    \item This is similar to (a), but instead of using the mass of the black hole, we use the enclosed mass of the star cluster: 
+        \begin{align*}
+            v_c = \sqrt{\frac{GM_{enc}}{R}},
+        \end{align*}
+        where $M_{enc}$ is given by the following (omitting units in the intermediate steps, but masses are in solar masses and distances are in parsecs):
+        \begin{align*}
+            M_{enc}(R) &= \int_0^{2\pi}\int_0^{\pi}\int_0^{r}\,\rho_0 r^{-\alpha}\,r^2 \sin{\theta}\,dr\,d\theta\,d\phi \\
+            &= 4\pi\rho_0 \int_0^R r^{2-\alpha}\,dr \\
+            &= 4\pi\rho_0 \frac{1}{3-\alpha}(r^{3-\alpha})\big|_0^R \\
+            &= \frac{4\pi\rho_0}{3-\alpha}R^{3-\alpha}~{\rm [M_\odot]}.
+        \end{align*}
+        So the velocity is given by 
+        \begin{align*}
+            v_c = \sqrt{\frac{G}{R}\frac{4\pi\rho_0 R^{3-\alpha}}{3-\alpha}}.
+        \end{align*}
+        Again, we need to ensure that the units are consistent, and we can do this by multiplying by some conversion factors:
+        \begin{align*}
+            v_c = \sqrt{\frac{G}{R\times 3.086\times 10^{16}}\frac{4\pi\rho_0 R^{3-\alpha}}{3-\alpha}\times 1.989\times 10^{30}} \times \frac{1}{1000},
+        \end{align*}
+        which gives circular velocity in kilometers per second.
+
+    \item As before, circular velocity is given by 
+        \begin{align*}
+            v_c = \sqrt{\frac{GM}{R}}.
+        \end{align*}
+        Here, $M$ is the total mass enclosed, and $v_c$ is the velocity due to the entire enclosed mass. We can separate this mass term into the mass of the black hole, $M_{BH}$, and the enclosed mass of the stellar cluster, $M_{SC}$:
+        \begin{align*}
+            v_c = \sqrt{\frac{G}{R}(M_{BH}+M_{SC})}.
+        \end{align*}
+        Then, we can rewrite the component masses in terms of the velocities due to those masses:
+        \begin{alignat*}{2}
+            v_{BH} &= \sqrt{\frac{GM_{BH}}{R}} &\qquad v_{SC} &= \sqrt{\frac{GM_{SC}}{R}} \\
+            \implies M_{BH} &= \frac{R}{G}v_{BH}^2 &\qquad M_{SC} &= \frac{R}{G}v_{SC}^2
+        \end{alignat*}
+        Substituting this into the previous expression, we find that 
+        \begin{align*}
+            v_c &= \sqrt{\frac{G}{R}(M_{BH}+M_{SC})} \\
+            &= \sqrt{\frac{G}{R}\left(\frac{R}{G}v_{BH}^2+\frac{R}{G}v_{SC}^2\right)} \\
+            &= \sqrt{v_{BH}^2 + v_{SC}^2}.
+        \end{align*}
+
+    \item \hfill\vspace{-0.4cm}
+        \begin{figure*}[!htbp]
+            \hspace{-3.cm}
+            \includegraphics[width=1.4\linewidth]{velocity_curves.png}
+        \end{figure*}
+
 \end{enumerate}
+
 
 
 
