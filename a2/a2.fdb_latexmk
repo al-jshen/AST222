@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1581032374 "a2.tex" "a2.pdf" "a2" 1581032375
-  "/dev/null" 1581032368 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1581033535 "a2.tex" "a2.pdf" "a2" 1581033537
+  "/dev/null" 1581033511 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -240,12 +240,12 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "a2.aux" 1581032375 757 1ea3239fe273b83c9e7c52e43abdd96d "pdflatex"
-  "a2.out" 1581032375 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "a2.tex" 1581032372 13074 2d850449643c65cba47b09e5effb5a5f ""
-  "velocity_curves.png" 1581025658 38822 8808d3b885a0212f5a8eece580cf733b ""
+  "a2.aux" 1581033536 757 1ea3239fe273b83c9e7c52e43abdd96d "pdflatex"
+  "a2.out" 1581033536 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "a2.tex" 1581033533 13166 01210719e4af08b239cbf8ebfb8cf743 ""
+  "velocity_curves.png" 1581033020 38203 6b72a40454636cd083f63df6e7cc9156 ""
   (generated)
-  "a2.log"
-  "a2.aux"
-  "a2.out"
   "a2.pdf"
+  "a2.log"
+  "a2.out"
+  "a2.aux"
