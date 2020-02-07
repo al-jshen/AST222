@@ -1,0 +1,109 @@
+Is the galaxy simply smooth and rounded, with no sign of a disk?
+Smooth / Features or Disk / Star or Artifact
+2 
+
+Could this be a disk viewed edge-on?
+Yes - Edge On Disk / No - Something Else
+1
+
+Does the galaxy have a bulge at its centre? If so, what shape?
+Rounded / Boxy / No Bulge
+1
+
+Is the galaxy merging or disturbed?
+Merging / Major Disturbance / Minor Disturbance / None
+4
+
+Do you see any of these rare features?
+Ring / Lens or arc / Irregular / Dust lane / Overlapping / Something Else / Nothing Unusual 
+Nothing Unusual
+
+-----
+
+Is the galaxy simply smooth and rounded, with no sign of a disk?
+Smooth / Features or Disk / Star or Artifact
+Smooth
+
+How rounded is it?
+Completely Round / In between / Cigar-shaped
+2
+
+Is the galaxy merging or disturbed?
+Merging / Major Disturbance / Minor Disturbance / None
+None
+
+
+Do you see any of these rare features?
+Ring / Lens or arc / Irregular / Dust lane / Overlapping / Something Else / Nothing Unusual 
+Nothing Unusual
+
+-----
+
+
+
+
+Is the galaxy simply smooth and rounded, with no sign of a disk?
+Smooth / Features or Disk / Star or Artifact
+2 
+
+Could this be a disk viewed edge-on?
+Yes - Edge On Disk / No - Something Else
+2
+
+Is there a bar feature through the centre of the galaxy?
+No Bar / Weak Bar / Strong Bar
+2
+
+Is there any sign of a spiral arm pattern?
+Yes / No
+1
+
+How tightly wound do the spiral arms appear?
+Tight / Medium / Loose 
+2
+
+How many spiral arms are there?
+1 / 2 / 3 / 4 / More than 4 / Can't tell
+2
+
+Is there a central bulge? If so, how large is it compared with the galaxy?
+No Bulge / Small / Moderate / Large / Dominant
+Small 
+
+Is the galaxy merging or disturbed?
+Merging / Major Disturbance / Minor Disturbance / None
+None
+
+Do you see any of these rare features?
+Ring / Lens or arc / Irregular / Dust lane / Overlapping / Something Else / Nothing Unusual 
+Nothing Unusual
+
+
+-----
+features or disk
+not edge on
+no bar
+no spiral arms
+moderate central bulge
+not merging
+no rare features
+
+
+
+
+-----
+smooth 
+cigar shaped
+not merging
+nothing unusual
+
+-----
+features or disk
+not edge on
+no bar
+no spirals
+dominant bulge
+not merging
+nothing unusual
+
+
