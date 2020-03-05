@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1583383752 "a3.tex" "a3.pdf" "a3" 1583383752
-  "/dev/null" 1583383750 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1583384099 "a3.tex" "a3.pdf" "a3" 1583384099
+  "/dev/null" 1583384096 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -239,9 +239,9 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "a3.aux" 1583383738 757 1ea3239fe273b83c9e7c52e43abdd96d "pdflatex"
-  "a3.out" 1583383737 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "a3.tex" 1583383751 8427 b385f103124ed7d4213eaba6a75ad3cb ""
+  "a3.aux" 1583383754 757 1ea3239fe273b83c9e7c52e43abdd96d "pdflatex"
+  "a3.out" 1583383754 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "a3.tex" 1583384098 8424 c0f86db151fb3f323291dc0ea636ff20 ""
   "figures/beta1.png" 1583380806 27815 f9b9498a88853cc47bdc660e3742e326 ""
   "figures/beta2.png" 1583381434 17571 ef675e8ae63d2f8931f7a15a3854a7bb ""
   "figures/einstein_angle.png" 1583380418 48697 51c6e6f53bfe34a385e2d5d60b906de8 ""
@@ -253,7 +253,7 @@
   "figures/q25.png" 1583379491 48508 137f1031f606b8b8cdcda581299223b2 ""
   "figures/theta_thetae.png" 1583380527 118157 46f68e8254530ae3a037339189511d6e ""
   (generated)
-  "a3.pdf"
   "a3.log"
-  "a3.aux"
   "a3.out"
+  "a3.aux"
+  "a3.pdf"
