@@ -1,0 +1,81 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=0.5in, bottom=1.5in, left=1in, right=1in]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{cancel}
+\usepackage{physics}
+\usepackage{caption,cleveref,colortbl,csquotes,datatool,helvet,mathpazo,multirow,listings,pgfplots,xcolor}
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\setlength{\footnotesep}{1.2\baselineskip}
+
+% edit these
+\newcommand\course{AST222H}
+\newcommand\Title{Problem Set 4}
+\newcommand\Name{Jeff Shen} 
+\newcommand\Id{1004911526} 
+\newcommand\Date{20 Mar 2020}
+
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\Name}
+\lhead{\Name\\\Id}
+\chead{\LARGE \Title}
+\rhead{\course \\ \Date}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\pgfplotsset{compat=1.16}
+\headsep 1.2em
+
+\begin{document}
+
+\section*{Problem 1}
+
+The spectrum would depend on the angle between the observer and the rotational axis of the AGN. Narrow emission lines come from lower-velocity material that is more distant from the center of the AGN, and are visible regardless of whether the angle is large or small. Broad emission lines are caused by Doppler broadening due to the higher velocities of material closer to the center. These are only visible if the angle is small, because at larger angles, the torus of dust/gas surrounding the center blocks the view of the center. 
+
+\section*{Problem 2}
+
+Radio-loud = has jet. need accretion disk + strong magnetic field (ionized particles moving in accretion disk)???
+
+\section*{Problem 3}
+
+\begin{enumerate}[label=(\roman*)]
+\end{enumerate}
+
+\section*{Problem 4}
+
+\section*{Problem 5}
+
+The mass of Sgr A* is approximately $4\times 10^{6}~{\rm M_\odot}$\footnote{https://arxiv.org/pdf/1607.05726.pdf}. The Schwarzchild radius is
+\begin{align*}
+    R_S = \frac{2GM}{c^2} = \frac{2\times (6.67\times 10^{-11}~{\rm m^3\,kg^{-1}\,s^{-2}})\times (4\times 10^{6}~{\rm M_\odot})\times (1.989\times 10^{30}~{\rm kg\,M_\odot^{-1}})}{(2.99\times 10^{8}~{\rm m\,s^{-1}})^2} = 1.18\times 10^{10}~{\rm m}.
+\end{align*}
+The distance between the Sun and the center of the Milky Way is $8~{\rm kpc} = 2.47\times 10^{20}~{\rm m}$. We can use this, along with the small angle approximation, to convert the Schwarzchild radius of Sgr A* to an angular size (which is the resolution required):
+\begin{align*}
+    \theta \simeq \tan{\theta} = \frac{R_s}{d} = \frac{1.18\times 10^{10}~{\rm m}}{2.47\times 10^{20}~{\rm m}} = 4.78\times 10^{-11}~{\rm rad} \simeq 0.01~{\rm mas}. 
+\end{align*}
+If VLBI is used and the effective diameter of the "telescope" is the diameter of the Earth, then the wavelength that would have to be used is 
+\begin{alignat*}{2}
+    &&\theta &= \frac{1.22\lambda}{2R_E} \\
+    \implies&&\lambda &= \frac{\theta \times 2R_E}{1.22} \\
+    &&&= \frac{4.78\times 10^{-11}~{\rm rad}\times 2\times 6.378\times 10^{6}~{\rm m}}{1.22} \\
+    &&&= 0.0005~{\rm m}.
+\end{alignat*}
+
+\end{document}
