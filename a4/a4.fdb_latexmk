@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1583898931 "a4.tex" "a4.pdf" "a4" 1583898931
-  "/dev/null" 1583898921 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1583933073 "a4.tex" "a4.pdf" "a4" 1583933074
+  "/dev/null" 1583933072 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -21,6 +21,7 @@
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm" 1136768653 1316 b4037e9c09961a72f8476628774e1ec1 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb" 1136849748 9356 a3851bc942e9b6995883193472ba1847 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb" 1136849748 15213 d999bbe8bd9c8f231f3f66a737c76478 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb" 1136849748 52406 dad2f72863a03727d5f536c64a69c452 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb" 1136849748 52665 661b1e6b26edb5f50dd491f8a701cb57 ""
@@ -234,9 +235,9 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "a4.aux" 1583898135 757 1e5a16b2642952dc944a27a65f87a76d "pdflatex"
-  "a4.out" 1583898135 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "a4.tex" 1583898930 3187 6cce59183a04c84a6c912e51d42c3ed4 ""
+  "a4.aux" 1583933074 757 57807d2400c150987558705201f0410e "pdflatex"
+  "a4.out" 1583933074 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "a4.tex" 1583933072 3841 184592af1656ab67f7541bafd5e917e4 ""
   (generated)
   "a4.pdf"
   "a4.log"
