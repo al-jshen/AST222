@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  11 MAR 2020 09:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  14 MAR 2020 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1277,147 +1277,70 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 48.
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 61.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 63.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 61.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 63.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 61.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 63.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 61.
+(Font)              scaled to size 11.40997pt on input line 63.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 61.
+(Font)              scaled to size 8.33606pt on input line 63.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 61.
+(Font)              scaled to size 6.25204pt on input line 63.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 61.
+(Font)              scaled to size 11.40997pt on input line 63.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 61.
+(Font)              scaled to size 8.33606pt on input line 63.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 61.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 61.
+(Font)              scaled to size 6.25204pt on input line 63.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 63.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 61.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 61.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 61.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 61.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 61.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 61.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.70 ... find that $\Delta v$ is {\huge is \lambda
-                                                   supposed to be the rest w...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Warning: Command \r invalid in math mode on input line 63.
 
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 70.
+(Font)              scaled to size 9.37807pt on input line 63.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 70.
+(Font)              scaled to size 7.29405pt on input line 63.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 70.
+(Font)              scaled to size 5.21004pt on input line 63.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 70.
+(Font)              scaled to size 9.37807pt on input line 63.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 70.
+(Font)              scaled to size 7.29405pt on input line 63.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 70.
-! Extra }, or forgotten $.
-l.70 ...st wavelength or the observed wavelength?}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+(Font)              scaled to size 5.21004pt on input line 63.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 21.61124pt on input line 72.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 72.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 72.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 21.61124pt on input line 72.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 72.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 72.
 
-
-! Package amsmath Error: \begin{align*} allowed only in paragraph mode.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.71         \begin{align*}
-                           
-You've lost some text.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.74 ...fairly consistent with a $2000~{\rm km\,s^
-                                                  {-1}}$ velocity dispersion.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.74 ...y consistent with a $2000~{\rm km\,s^{-1}}
-                                                  $ velocity dispersion.
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-Overfull \hbox (861.7812pt too wide) in paragraph at lines 69--75
-\OT1/ppl/m/n/10.95 Rearranging for $\OT1/zplm/m/n/10.95 ^^A\OML/zplm/m/it/10.95
- v$ \OT1/ppl/m/n/10.95 and plug-ging in the ap-pro-pri-ate val-ues, we find tha
-t $\OT1/zplm/m/n/10.95 ^^A\OML/zplm/m/it/10.95 v$ \OT1/ppl/m/n/10.95 is \OT1/pp
-l/m/n/20.74 is $\OML/zplm/m/it/20.74 ^^Usupposedtobetherestwavelengthortheobser
-vedwavelength\OT1/zplm/m/n/20.74 ?\OML/zplm/m/it/20.74 Yes\OT1/ppl/m/n/20.74 , 
-\OML/zplm/m/it/20.74 thisisfairlyconsistentwitha$\OT1/ppl/m/n/20.74 2000 kms$[]
-$
- []
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.75 \end{enumerate}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.75 \end{enumerate}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (28.51909pt too wide) detected at line 82
+Overfull \hbox (28.51909pt too wide) detected at line 84
 []
  []
 
@@ -1427,21 +1350,21 @@ Overfull \hbox (28.51909pt too wide) detected at line 82
 
 AED: lastpage setting LastPage
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
  (./a4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `a4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 44117 strings out of 492616
- 962899 string characters out of 6129482
+ 44114 strings out of 492616
+ 962882 string characters out of 6129482
  1207184 words of memory out of 5000000
  47414 multiletter control sequences out of 15000+600000
- 566753 words of font info for 118 fonts, out of 8000000 for 9000
+ 565580 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,12n,127p,907b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1452,7 +1375,7 @@ ive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-d
 ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on a4.pdf (2 pages, 74845 bytes).
+Output written on a4.pdf (2 pages, 71771 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
