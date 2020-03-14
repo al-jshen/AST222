@@ -118,4 +118,31 @@ If VLBI is used and the effective diameter of the "telescope" is the diameter of
     &&&= 0.0005~{\rm m}.
 \end{alignat*}
 
+
+\section*{Problem 6}
+
+C&O Equation 26.2:
+\begin{align*}
+    t_c = \frac{2\pi v_M r_i^2}{CGM}
+\end{align*}
+where $t_c$ is the time required for the cluster to spiral in to the center of the Milky Way, $v_M$ is the orbital speed ($\sim 220~{\rm km\,s^{-1}}$), $r_i$ is the initial distance of the cluster from the center, and $M$ is the mass of the cluster. Plugging in the appropriate values and performing the necessary unit conversions, we get 
+\begin{align*}
+    t_c = \frac{2\pi \times 220~{\rm km\,s^{-1}}\times 5~{\rm kpc}}{75\times 6.67\times 10^{-11}~{\rm m^3\,kg^{-1}}\times 5\times 10^{6}~{\rm M_\odot}} = 20.95~{\rm Gyr}.
+\end{align*}
+This means that dynamical friction is not relevant for Milky Way globular clusters, as the time required to sink to the center is greater than the age of the Universe. 
+
+\section*{Problem 7}
+
+\begin{enumerate}[label=(\roman*)]
+    \item We can do some algebra to solve for $s(t)$:
+        \begin{alignat*}{2}
+            &&Z(t) &= -y\ln{\left(\frac{g(t)}{M_b}\right)} \\
+            \implies&&-\frac{Z(t)}{y} &= \ln{\left(\frac{g(t)}{g(t) + s(t)}\right)} \\
+            \implies&&e^{-Z(t)/y} &= \frac{g(t)}{g(t) + s(t)} \\
+            \implies&&g(t)+s(t) &= \frac{g(t)}{e^{-Z(t)/y}} = g(t)e^{Z(t)/y} \\
+            \implies&&s(t) &= g(t)e^{Z(t)/y} - g(t) = g(t) (e^{Z(t)/y} - 1)
+        \end{align*}
+\end{enumerate}
+
+
 \end{document}
