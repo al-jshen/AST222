@@ -55,7 +55,31 @@ Radio-loud AGN have jets/lobes, while radio-quiet AGN do not. These jets are cau
 
 \section*{Problem 3}
 
-In free-fall, 
+In free-fall, kinetic energy is given by 
+\begin{align*}
+    E_k = \frac{1}{2}mv^2,
+\end{align*}
+where $m$ is the mass of the parcel and $v$ is the velocity of the parcel. Gravitational potential energy is given by 
+\begin{align*}
+    E_g = -\frac{GMm}{r},
+\end{align*}
+where $M$ and $r$ are the mass and radius of the neutron star, respectively. In free-fall, energy is conserved, and 
+\begin{align*}
+    \frac{1}{2}mv^2 = \frac{GMm}{r}.
+\end{align*}
+We also know that luminosity is energy emitted per unit time, which is the time derivative of the above. $M$ and $r$ are constant, so on the right, we take the time derivative of $m$:
+\begin{align*}
+    L = \frac{1}{2}\dot{m}v^2 = \frac{GM\dot{m}}{r}.
+\end{align*}
+We want an $mc^2$ term, so we can multiply both the numerator and denominator by $c^2$:
+\begin{align*}
+    L = \frac{GM\dot{m}}{r}\times \frac{c^2}{c^2} = \frac{GM}{rc^2}\times \dot{m}c^2.
+\end{align*}
+We can call the first term (the coefficient on the $\dot{m}c^2$) the efficiency term $\eta$. For the parameters given in the question, we find that 
+\begin{align*}
+    \eta = \frac{GM}{rc^2} = \frac{6.67\times 10^{-11}~{\rm m^3\,kg^{-1}\times 1.4\times 1.989\times 10^{30}~{\rm kg}}}{10^4~{\rm m}\times (2.99\times 10^{8}~{\rm m\,s^{-1}})^2} = 0.207,
+\end{align*}
+which is the fraction of the rest-mass energy energy released. 
 
 \section*{Problem 4}
 
