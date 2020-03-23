@@ -71,7 +71,7 @@ We also know that luminosity is energy emitted per unit time, which is the time 
 \begin{align*}
     L = \frac{1}{2}\dot{m}v^2 = \frac{GM\dot{m}}{r}.
 \end{align*}
-We want an $mc^2$ term, so we can multiply both the numerator and denominator by $c^2$:
+We want an $mc^2$ term, so we multiply both the numerator and denominator by $c^2$:
 \begin{align*}
     L = \frac{GM\dot{m}}{r}\times \frac{c^2}{c^2} = \frac{GM}{rc^2}\times \dot{m}c^2.
 \end{align*}
@@ -149,9 +149,9 @@ This means that dynamical friction is not relevant for Milky Way globular cluste
         &= M_b(1-e^{-Z_x/y}).
     \end{align}
     
-    \item some description here
+\item The fraction of low metallicity stars is given by
     \begin{align}
-        \frac{s_{Z<Z_\odot/3}}{s_{Z<Z_\odot}} &= \frac{M(1-e^{-Z_\odot/3y})}{M(1-e^{-Z_\odot/y})}
+        \frac{s_{Z<Z_\odot/3}}{s_{Z<Z_\odot}} &= \frac{M(1-e^{-Z_\odot/3y})}{M(1-e^{-Z_\odot/y})}.
     \end{align}
     From Eq. 3 above, we know that $e^{-Z_\odot/y} = g/M_b$. Similarly, we can rewrite the $e^{-Z_\odot/3y}$ term by starting from Eq. 2:
     \begin{alignat}{2}
@@ -234,7 +234,7 @@ This means that dynamical friction is not relevant for Milky Way globular cluste
     \end{alignat}
     Redefining $y$ as $y = \frac{q/\alpha}{\eta+1}$, we arrive at the same result as PS Eq. 3.42:
     \begin{align}
-        \frac{dZ}{d\ln{g}} = -y = \frac{q/\alpha}{-\eta-1}.
+        \frac{dZ}{d\ln{g}} = -y.
     \end{align}
 
 \item Since $g(t)$ is constant, we know that $dg/ds = 0$. So, PS Eq. 3.41 becomes 
@@ -244,7 +244,7 @@ This means that dynamical friction is not relevant for Milky Way globular cluste
     Multiplying by $dt/dt$, we can rewrite Eq. 39 as 
     \begin{alignat}{2}
         &&\frac{dZ}{ds}g &= \frac{dZ}{dt}g\frac{dt}{ds} = y-Z \\
-        \implies&&\frac{dZ}{dt} = \frac{y-Z}{g}\frac{ds}{dt}.
+        \implies&&\frac{dZ}{dt} &= \frac{y-Z}{g}\frac{ds}{dt}.
     \end{alignat}
     We cancel out $dt$ from both sides and move the $y-Z$ term to the left side. We get a separable differential equation:
     \begin{align}
@@ -273,8 +273,27 @@ This means that dynamical friction is not relevant for Milky Way globular cluste
         \implies&&Z(t) &= y - ye^{-s(t)/g} = y(1 - e^{-s(t)/g}).
     \end{align}
 
-\item asdf
+\item Since $g$ is constant, we can directly rearrange Eq. 49 for $s(t)$:
+    \begin{alignat}{2}
+        &&Z(t) &= y(1 - e^{-s(t)/g}) = Z_x\\
+        \implies&&\frac{Z_x}{y} &= 1 - e^{-s(t)/g} \\
+        \implies&&e^{-s(t)/g} &= 1-\frac{Z_x}{y} \\
+        \implies&&-\frac{s(t)}{g} &= \ln{(1-\frac{Z_x}{y})} \\
+        \implies&&s(t) &= -g\ln{(1-\frac{Z_x}{y})},
+    \end{alignat}
+    which gives the mass of stars with metallicity less than some metallity $Z_x$. We want to find $y$ (the $10^{-2}$ given in the slides doesn't work—we end up taking the logarithm of a negative number). Assuming a present-day gas fraction of $g/M_b = 0.1$ (from part (ii)), we know that $s/M_b = 0.9$, which means that $s/g = 9$. From Eq. 51, we solve for $y$, leaving it in terms of $Z_x$:
+    \begin{align}
+        y = \frac{Z_x}{1-e^{-s(t)/g}} = \frac{1}{1-e^{-9}}Z_x.
+    \end{align}
+    Now we use Eq. 54 and find the ratio of stars with $Z_\odot$ and with $Z_\odot/3$:
+    \begin{align}
+        \frac{-g\ln{(1-\frac{Z_\odot}{3y})}}{-g\ln{(1-\frac{Z_\odot}{y})}} &= \frac{\ln{(1-\frac{Z_\odot}{\frac{3Z_\odot}{1-e^{-9}}})}}{\ln{(1-\frac{Z_\odot}{\frac{Z_\odot}{1-e^{-9}}})}} \\
+        &= \frac{\ln{(1-\frac{1-e^{-9}}{3})}}{\ln{(1-(1-e^{-9}))}} \\
+        &= 0.045.
+    \end{align}
+    The fraction of metal-poor stars predicted by the accreting box model is much closer to observed values. 
 \end{enumerate}
 
+:)
 
 \end{document}

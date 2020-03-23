@@ -454,6 +454,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf
 INPUT a4.aux
 INPUT ./a4.out
 INPUT ./a4.out
