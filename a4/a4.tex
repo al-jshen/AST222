@@ -29,7 +29,7 @@
 \newcommand\Title{Problem Set 4}
 \newcommand\Name{Jeff Shen} 
 \newcommand\Id{1004911526} 
-\newcommand\Date{20 Mar 2020}
+\newcommand\Date{23 Mar 2020}
 
 \pagestyle{fancyplain}
 \headheight 35pt
@@ -84,7 +84,7 @@ which is the fraction of the rest-mass energy energy released.
 \section*{Problem 4}
 
 \begin{enumerate}[label=(\roman*)]
-    \item The rest wavelength of the $H\alpha$ emission line in a vacuum (?) is $6564.614~{\rm \r{A}} = 0.656~{\mu m}$\footnote{https://classic.sdss.org/dr3/products/spectra/vacwavelength.html}. The redshift of the source is 
+    \item The rest wavelength of the $H\alpha$ emission line in a vacuum is $6564.614~{\rm \r{A}} = 0.656~{\mu m}$\footnote{https://classic.sdss.org/dr3/products/spectra/vacwavelength.html}. The redshift of the source is 
         \begin{align*}
             z = \frac{4~{\mu m} - 0.656~{\mu m}}{0.656~{\mu m}} = 5.01.
         \end{align*}
@@ -93,11 +93,12 @@ which is the fraction of the rest-mass energy energy released.
         \begin{align*}
             \frac{\Delta \lambda}{\lambda} = \frac{\Delta v}{c}.
         \end{align*}
-        Rearranging for $\Delta v$ and plugging in the appropriate values, we find that $\Delta v$ is {\huge is $\Delta \lambda$ supposed to be the width (0.025)? or the difference (4-0.656) from last q?}:
+        Assume that the width $\Delta\lambda$ is measured from the bottom left to the bottom right of the peak (not the FWHM). Rearranging for $\Delta v$ and plugging in the appropriate values, we find that $\Delta v$ is:
         \begin{align*}
-            \Delta v = \frac{\Delta \lambda}{\lambda}\times c = \frac{0.025~{\mu m}}{0.656~{\mu m}}\times 2.99\times 10^{8}~{\rm m\,s^{-1}} = ~{\rm m\,s^{-1}}.
+            \Delta v = \frac{\Delta \lambda}{\lambda}\times c = \frac{0.025~{\mu m}}{0.656~{\mu m}}\times 2.99\times 10^{8}~{\rm m\,s^{-1}} \simeq 11425~{\rm km\,s^{-1}}.
         \end{align*}
-        Yes, this is fairly consistent with a $2000~{\rm km\,s^{-1}}$ velocity dispersion.
+        $\Delta v$ corresponds to the difference between the maximum and minimum velocities, and assuming that velocity dispersion is $\sigma = \frac{1}{2}\Delta v$, it seems that this does not correspond to a velocity dispersion of $2000~{\rm km\,s^{-1}}$.
+
 \end{enumerate}
 
 \section*{Problem 5}
@@ -156,7 +157,7 @@ This means that dynamical friction is not relevant for Milky Way globular cluste
     \begin{alignat}{2}
         &&-\frac{Z_x}{y} &= \ln{\left(\frac{g(t)}{M_b}\right)} \\
         \implies&&-\frac{Z_x}{3y} &= \frac{1}{3}\ln{\left(\frac{g(t)}{M_b}\right)} = \ln{\left(\left(\frac{g(t)}{M_b}\right)^{1/3}\right)} \\
-        \implies&&e^{-Z_\odot/y} &= \left(\frac{g(t)}{M_b}\right)^{1/3}.
+        \implies&&e^{-Z_\odot/3y} &= \left(\frac{g(t)}{M_b}\right)^{1/3}.
     \end{alignat}
     Then we can rewrite Eq. 8 as 
     \begin{align}
@@ -166,6 +167,113 @@ This means that dynamical friction is not relevant for Milky Way globular cluste
     \begin{align}
         \frac{1-0.1^{1/3}}{1-0.1} \simeq 0.5954.
     \end{align}
+
+    \item We integrate the given equation to find the entire supply of baryons lost from time $t'=0$ to time $t'=t$ (call this $M_L(t)$). Note that $\eta$ and $\alpha$ are constants:
+    \begin{align}
+        M_L(t) &= \int_0^t \frac{dM(t')}{dt'}dt' \\
+        &= -\eta\alpha\int_0^t \Psi(t')dt' \\
+        &= -\eta\alpha(S(t) - S(0)).
+    \end{align}
+    Since we assume that at the birth of the galaxy, all baryonic matter is in the form of gas, $S(0) = 0$. Furthermore, $s = \alpha S$, so 
+    \begin{align}
+        M_L(t) = -\eta s(t).
+    \end{align}
+    Then $M_b(t)$, the mass at time $t$, is the sum of the initial mass $M_b(0)$ and the total change in mass up until time $t$:
+    \begin{align}
+        M_b(t) = M_b(0) + M_L(t) = M_b(0) - \eta s(t).
+    \end{align}
+
+\item Using the result from (iii), PS 3.40 becomes
+    \begin{align}
+        \frac{dg}{dt} + \frac{ds}{dt} = \frac{M_b}{dt} = -\eta\alpha\Psi.
+    \end{align}
+    By definition, we have the relation 
+    \begin{align}
+        \frac{ds}{dt} = \alpha \frac{dS}{dt} = \alpha\Psi.
+    \end{align}
+    Using this, we find that 
+    \begin{align}
+        \frac{dg}{dt} &= -\eta\alpha\Psi - \frac{ds}{dt} \\
+        &= -\eta\frac{ds}{dt} - \frac{ds}{dt} \\
+        &= \frac{ds}{dt}(-\eta-1).
+    \end{align}
+    Dividing both sides by $ds/dt$, we get 
+    \begin{align}
+        \frac{dg}{ds} = -\eta-1.
+    \end{align}
+    We also adjust the the equations at the bottom left of PS p. 143 to account for the expelled gas. The rate of metal mass lost is given by 
+    \begin{align}
+        Z\frac{dM_L}{dt} = Z\frac{d}{dt}(-\eta s) = -Z\eta\alpha\Psi,
+    \end{align}
+    where $M_L$ is given in Eq. 17. Including this extra term, we find that 
+    \begin{alignat}{2}
+        &&\frac{d(gZ)}{dt} &= \Psi(RZ+q) - Z\Psi - Z\eta\alpha\Psi \\
+        \implies&&\frac{d(gZ)}{dS} &= RZ+q-Z-Z\eta\alpha \\
+        &&&= Z(R-1-\eta\alpha) + q \\
+        &&&= Z(-\alpha-\eta\alpha) + q \\
+        &&&= Z\alpha(-\eta-1) + q \\
+        \implies&&\frac{d(gZ)}{ds} &= Z(-\eta-1) + \frac{q}{\alpha}
+    \end{alignat}
+    Using the product rule and the Eq. 24, we can also express the left hand side as 
+    \begin{align}
+        \frac{d(gZ)}{ds} = \frac{dg}{ds}Z + \frac{dZ}{ds}g = (-\eta-1)Z + \frac{dZ}{ds}g.
+    \end{align}
+    Equating Eq. 31 and Eq. 32, we find that 
+    \begin{alignat}{2}
+        &&(-\eta-1)Z + \frac{dZ}{ds}g &= Z(-\eta-1) + \frac{q}{\alpha} \\
+        \implies&&\frac{dZ}{ds}g &= \frac{q}{\alpha}.
+    \end{alignat}
+    Again using Eq. 24, we can rewrite the left hand side:
+    \begin{align}
+        \frac{dZ}{ds}g = \frac{dZ}{dg}g\frac{dg}{ds} = \frac{dZ}{dg}g(-\eta-1) = \frac{dZ}{d\ln{g}}(-\eta-1).
+    \end{align}
+    Substituting this into Eq. 34, we get 
+    \begin{alignat}{2}
+        &&\frac{dZ}{d\ln{g}}(-\eta-1) &= \frac{q}{\alpha} \\
+        \implies&&\frac{dZ}{d\ln{g}} &= \frac{q/\alpha}{-\eta-1}.
+    \end{alignat}
+    Redefining $y$ as $y = \frac{q/\alpha}{\eta+1}$, we arrive at the same result as PS Eq. 3.42:
+    \begin{align}
+        \frac{dZ}{d\ln{g}} = -y = \frac{q/\alpha}{-\eta-1}.
+    \end{align}
+
+\item Since $g(t)$ is constant, we know that $dg/ds = 0$. So, PS Eq. 3.41 becomes 
+    \begin{align}
+        \frac{d(gZ)}{ds} = \cancelto{0}{\frac{dg}{ds}Z} + \frac{dZ}{ds}g = \frac{dZ}{ds}g = y-Z.
+    \end{align}
+    Multiplying by $dt/dt$, we can rewrite Eq. 39 as 
+    \begin{alignat}{2}
+        &&\frac{dZ}{ds}g &= \frac{dZ}{dt}g\frac{dt}{ds} = y-Z \\
+        \implies&&\frac{dZ}{dt} = \frac{y-Z}{g}\frac{ds}{dt}.
+    \end{alignat}
+    We cancel out $dt$ from both sides and move the $y-Z$ term to the left side. We get a separable differential equation:
+    \begin{align}
+        \frac{1}{y-Z}dZ = \frac{1}{g}ds.
+    \end{align}
+    We can integrate this from $0$ to $t$, noting that $g$ is constant with respect to $s$:
+    \begin{align}
+        \ln{(y-Z)}(-1)\big|^{Z=t}_{Z=0} = \frac{s}{g}\big|^{s=t}_{s=0},
+    \end{align}
+    with the $-1$ on the left coming from the chain rule. We can move it over to the right hand side, then evaluate the left hand side using $Z(0) = 0$:
+    \begin{align}
+        \ln{(y-Z(t))} - \ln{(y-Z(0))} = \ln{(y-Z(t))} - \ln{y}.
+    \end{align}
+    Using $s(0) = 0$, the right hand side (with the extra negative sign) evalutes to 
+    \begin{align}
+        -\frac{s(t)}{g} + \frac{s(0)}{g} = -\frac{s(t)}{g}.
+    \end{align}
+    We equate Eq. 44 and Eq. 45, then take the exponent on both sides. On the left side, we have 
+    \begin{align}
+        e^{\ln{(y-Z(t))} - \ln{y}} = e^{\ln{(y-Z(t))}} e^{-\ln{y}} = \frac{e^{\ln{(y-Z(t))}}}{e^{\ln{y}}} = \frac{y-Z(t)}{y}.
+    \end{align}
+    Equating this to the right side and rearranging, we find that 
+    \begin{align}
+        &&\frac{y-Z(t)}{y} &= e^{-s(t)/g} \\
+        \implies&&y-Z(t) &= ye^{-s(t)/g} \\
+        \implies&&Z(t) &= y - ye^{-s(t)/g} = y(1 - e^{-s(t)/g}).
+    \end{align}
+
+\item asdf
 \end{enumerate}
 
 
