@@ -63,20 +63,31 @@ Density for matter is given by $\rho_{m,\,0} = \Omega_{m,\,0}(1+z)^3$, and for r
 
 \section*{Problem 3}
 
-The Schwarzchild radius of the black hole is 
+The radius of the sphere of influence of the black hole is 
 \begin{align*}
-    R_S = \frac{2GM}{c^2} = \frac{2\times 6.67\times 10^{-11}~{\rm m^3\,kg^{-1}}\times 2\times 10^{9}~{\rm M_\odot}}{(2.99\times 10^{8}~{\rm m\,s^{-1}})^2} = 5.91\times 10^{12}~{\rm m}.
-\end{align*}
-Given that the distance to M87 is $53.5~{\rm Mly\footnote{from Google}} = 5.06\times 10^{23}~{\rm m}$, the angular radius is 
-\begin{align*}
-    \theta \simeq \tan{\theta} = \frac{R_S}{d} = \frac{5.91\times 10^{12}~{\rm m}}{5.06\times 10^{23}~{\rm m}} = 1.17\times 10^{-11}~{\rm rad} = 2.41\times 10^{-6}~{\rm arcsec}.
+    r = \frac{GM}{\sigma^2} = \frac{6.67\times 10^{-11}~{\rm m^3\,kg^{-1}}\times 2\times 10^{9}~{\rm M_\odot}}{4\times 10^{5}~{\rm m\,s^{-1}}} = 1.66\times 10^{18}~{\rm m}.
 \end{align*}
 
-{\huge velocity dispersion aprt? observable? something about not being observable because seeing limits the resolution of ground telescopes. velocity dispersion has something to do with full width half maximum which relates to the seeing resolution.}
+Given that the distance to M87 is $53.5~{\rm Mly\footnote{from Google}} = 5.06\times 10^{23}~{\rm m}$, the angular radius is 
+\begin{align*}
+    \theta \simeq \tan{\theta} = \frac{r}{d} = \frac{1.66\times 10^{18}~{\rm m}}{5.06\times 10^{23}~{\rm m}} = 3.28\times 10^{-6}~{\rm rad} = 0.67~{\rm arcsec}.
+\end{align*}
+
+Given that the limit of seeing is
 
 \section*{Problem 4}
 
-what? if the parallax error is the same as the distance error then isnt the distance error just 
+The parallax formula is 
+\begin{alignat*}{2}
+    &&\theta \simeq \tan{\theta} &= \frac{r}{d} \\
+    \implies&& d &= \frac{r}{\theta},
+\end{alignat*}
+where $d$ is the distance we want, $\theta$ is the parallax angle, and $r$ is the distance from Gaia to the Sun. Gaia is at the Earth-Sun L2 Lagrangian point, which has a radius of orbit of approximately $1.01~{\rm au}$. Plugging these values in, we find that $d$ is 
+\begin{align*}
+    d = \frac{1.01~{\rm au}}{0.05~{\rm arcsec}} = 20.22~{\rm pc}.
+\end{align*}
+At this distance, 
+
 \newpage
 
 \section*{Problem 5}
@@ -120,8 +131,8 @@ what? if the parallax error is the same as the distance error then isnt the dist
         \begin{align*}
             \frac{d^2R}{dt^2} = -\frac{4}{3}GR(\rho + \frac{3P}{c^2}).
         \end{align*}
-    \item 
-    \item 
+    \item .
+    \item .
 \end{enumerate}
 
 
